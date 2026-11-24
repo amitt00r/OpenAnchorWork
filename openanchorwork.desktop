@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=OpenAnchorWork
+Comment=Camera settings for Anker webcams (PowerConf C200)
+Exec=/usr/bin/python3 @DIR@/app.py
+Icon=camera-web
+Categories=AudioVideo;Video;
+Terminal=false
+StartupWMClass=io.github.openanchorwork
+Keywords=camera;webcam;anker;c200;powerconf;ankerwork;

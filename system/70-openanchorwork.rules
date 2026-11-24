@@ -1,0 +1,7 @@
+# OpenAnchorWork: give the logged-in desktop user access to supported cameras'
+# USB device nodes (TAG uaccess), one line per camera profile in profiles.py.
+#
+# Anker PowerConf C200 (291a:3369): the firmware wrongly reports "manual" as
+# its only exposure mode, so the Linux driver refuses auto mode. OpenAnchorWork
+# sends the auto-exposure command over raw USB instead, which needs this access.
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="291a", ATTR{idProduct}=="3369", TAG+="uaccess"
